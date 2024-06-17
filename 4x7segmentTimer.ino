@@ -19,6 +19,16 @@ void setup()
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
   pinMode(D4, OUTPUT);
+  numberFunctionPtrs[0] = zero;
+  numberFunctionPtrs[1] = one;
+  numberFunctionPtrs[2] = two;
+  numberFunctionPtrs[3] = three;
+  numberFunctionPtrs[4] = four;
+  numberFunctionPtrs[5] = five;
+  numberFunctionPtrs[6] = six;
+  numberFunctionPtrs[7] = seven;
+  numberFunctionPtrs[8] = eight;
+  numberFunctionPtrs[9] = nine;
   startMillis = millis();
 }
 
@@ -28,8 +38,6 @@ void loop()
   unsigned long elapsedSecs = (unsigned long)(elapsedMillis / 1000);
   int seconds = elapsedSecs % 60;
   int minutes = (int)(elapsedSecs / 60);
-
-  void (*numberFunctionPtrs[])() = {zero, one, two, three, four, five, six, seven, eight, nine};
   digit4(); (*numberFunctionPtrs[seconds % 10])(); delay(digitPeriod);
   digit3(); (*numberFunctionPtrs[(int)(seconds / 10)])(); delay(digitPeriod);
   digit2(); decimal(); delay(digitPeriod);
