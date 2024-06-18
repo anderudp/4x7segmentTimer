@@ -1,8 +1,8 @@
 unsigned long startMillis;
 int digitPeriod = 5;  // How long to spend on each digit. Setting this too high causes flickering.
-int pinA = 11;int pinB = 7;int pinC = 4;int pinD = 2;
-int pinE = 1;int pinF = 10;int pinG = 5;
-int pinDP = 3;int D1 = 12;int D2 = 9;int D3 = 8; int D4 = 6;
+int pinA = 11; int pinB = 7; int pinC = 4; int pinD = 2; int pinE = 1; int pinF = 10; int pinG = 5;
+int D1 = 12; int D2 = 9; int D3 = 8; int D4 = 6;
+int pinDP = 3; 
 void (*numberFunctionPtrs[10])();
 
 void setup() 
