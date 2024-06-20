@@ -1,6 +1,4 @@
 {
     "board": "arduino:avr:uno",
-    "programmer": "avrisp",
-    "sketch": "4x7segmentTimer.ino",
     "port": "/dev/ttyACM0"
 }
