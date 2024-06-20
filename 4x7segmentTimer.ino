@@ -166,6 +166,30 @@ void nine()
   digitalWrite(pinDP, HIGH);
 }
 
+void letterA()
+{
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, HIGH);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, HIGH);
+}
+
+void letterB()
+{
+  digitalWrite(pinA, HIGH);
+  digitalWrite(pinB, HIGH);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  digitalWrite(pinDP, HIGH);
+}
+
 void decimal()
 {
   digitalWrite(pinA, HIGH);
